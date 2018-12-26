@@ -1,0 +1,211 @@
+body,
+html,
+#root {
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #f6f8fa;
+}
+
+*:focus {
+  box-shadow: none !important;
+  outline: 0 !important;
+}
+
+/* Response */
+.response {
+  height: 100%;
+  background-color: #f6f8fa;
+}
+
+.response .card {
+  background-color: #fff;
+  width: 600px;
+  border-radius: 20px;
+  border: none;
+  padding: 50px;
+  text-align: center;
+  top: 150px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+}
+
+.response .card a {
+  color: #000;
+}
+
+.response .card a:hover {
+  color: rgb(255, 81, 81);
+  text-decoration: none;
+}
+
+.response .card h1 {
+  font-weight: 900;
+  font-size: 50px;
+}
+
+.response .card hr {
+  width: 50px;
+  border: 1px solid black;
+  margin: 15px auto;
+}
+
+.response .card h5 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.response .social-media {
+  margin-top: 15px;
+}
+
+.response .social-media a {
+  padding: 0 5px;
+}
+
+/* Login */
+.login-blob {
+  position: absolute;
+  right: 0;
+}
+
+.login-mango {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  z-index: 1;
+  height: 100px;
+}
+
+.login .response .card {
+  width: 500px;
+  padding: 60px;
+  top: 200px;
+}
+
+.login .response .card h1 {
+  font-size: 40px;
+}
+
+.login form {
+  text-align: left;
+  margin: 20px 0;
+}
+
+.login form input,
+.login form select {
+  background: #f6f8fa;
+  border: none;
+  border-radius: 50px;
+}
+.login form input:focus,
+.login form select:focus {
+  border: 1px solid #f6f8fa;
+  background: white;
+}
+
+.login form button {
+  border-radius: 50px;
+  border: none;
+  color: #fff;
+  background-color: #694eff;
+  font-weight: 800;
+  font-size: 20px;
+  padding: 10px 0px;
+  width: 100%;
+}
+
+.login form button:hover {
+  cursor: pointer;
+}
+
+/* Dashboard */
+
+.dash-blob-top {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.dash-blob-circle {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+.dashboard {
+  text-align: center;
+  padding: 50px 0;
+}
+.dashboard .card {
+  border: none;
+  background: white;
+  padding: 110px;
+  width: fit-content;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.dashboard h1 {
+  font-weight: 900;
+  font-size: 90px;
+  color: #353535;
+  z-index: 1;
+  position: relative;
+}
+
+.dashboard hr {
+  width: 50px;
+  border: 2px solid black;
+  margin: 15px auto;
+}
+
+.dashboard table {
+  margin: auto;
+  background: white;
+  width: 1000px;
+  border-radius: 10px;
+}
+
+.dashboard td,
+.dashboard th {
+  padding: 10px 20px;
+  text-align: left;
+  color: #353535;
+}
+
+.dashboard tr {
+  border: 1px solid #f5f5f5;
+}
+
+.dashboard a {
+  color: #ff4e4e;
+}
+
+.dashboard .search {
+  width: 500px;
+  margin: 20px auto;
+}
+
+.dashboard .search input {
+  border: none;
+  font-size: 17px;
+  font-weight: 900;
+  color: #694eff;
+  padding: 20px 15px;
+  border: 1px solid #f5f5f5;
+  border-radius: 20px;
+}
+
+.dashboard .search input::placeholder {
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 550px) {
+  .login .response .card {
+    width: 90%;
+    padding: 40px;
+  }
+}
