@@ -208,4 +208,19 @@ html,
     width: 90%;
     padding: 40px;
   }
+
+  .login-mango {
+    display: none;
+  }
+
+  .login-blob {
+    position: absolute;
+    right: auto;
+    height: 100%;
+    width: 100%;
+  }
+
+  .login .response .card {
+    top: 50px;
+  }
 }
