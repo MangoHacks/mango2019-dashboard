@@ -8,8 +8,8 @@ const create = password =>
   new Promise(async (resolve, reject) => {
     try {
       const { data } = await ti.post("/token", { password });
-      localStorage.setItem("JWT", data.data.token);
-      resolve(data);
+
+      resolve(data.data.token);
     } catch (e) {
       reject(e.response.data.error);
     }

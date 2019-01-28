@@ -2,10 +2,28 @@ import React from "react";
 
 import { BrowserRouter, Switch, Redirect, Route } from "react-router-dom";
 
-import { DefaultRoute, DashboardRoute, AddPropsToRoute } from "./routes";
+import {
+  DefaultRoute,
+  DashboardRoute,
+  AddPropsToRoute,
+  CarnivalRoute,
+  ExpressRoute,
+  GERoute
+} from "./routes";
 
+// Default
 import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
+
+// Company Login
+import CarnivalLogin from "./components/Companies/Login/Carnival";
+import ExpressLogin from "./components/Companies/Login/Express";
+import GELogin from "./components/Companies/Login/GE";
+
+// Company Dashboard
+import CarnivalDashboard from "./components/Companies/Dashboard/Carnival";
+import ExpressDashboard from "./components/Companies/Dashboard/Express";
+import GEDashboard from "./components/Companies/Dashboard/GE";
 
 import HTTP404 from "./components/HTTP404";
 
@@ -25,6 +43,28 @@ class App extends React.Component {
             exact
             path="/dashboard"
             component={AddPropsToRoute(Dashboard)}
+          />
+
+          {/* Companies Login*/}
+          <DefaultRoute exact path="/carnival" component={CarnivalLogin} />
+          <DefaultRoute exact path="/express" component={ExpressLogin} />
+          <DefaultRoute exact path="/ge" component={GELogin} />
+
+          {/* Companies Dashboard*/}
+          <CarnivalRoute
+            exact
+            path="/carnival-dashboard"
+            component={AddPropsToRoute(CarnivalDashboard)}
+          />
+          <ExpressRoute
+            exact
+            path="/express-dashboard"
+            component={AddPropsToRoute(ExpressDashboard)}
+          />
+          <GERoute
+            exact
+            path="/ge-dashboard"
+            component={AddPropsToRoute(GEDashboard)}
           />
 
           <Route component={HTTP404} />

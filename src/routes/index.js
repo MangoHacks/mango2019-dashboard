@@ -35,6 +35,57 @@ const DashboardRoute = ({ component: Component, ...rest }) => {
   return token ? dashboard : <Redirect to="login" />;
 };
 
+const CarnivalRoute = ({ component: Component, ...rest }) => {
+  const token = localStorage.getItem("CARNIVAL_JWT");
+
+  const dashboard = (
+    <Route
+      {...rest}
+      render={props => (
+        <React.Fragment>
+          <Component {...props} />
+        </React.Fragment>
+      )}
+    />
+  );
+
+  return token ? dashboard : <Redirect to="carnival" />;
+};
+
+const ExpressRoute = ({ component: Component, ...rest }) => {
+  const token = localStorage.getItem("EXPRESS_JWT");
+
+  const dashboard = (
+    <Route
+      {...rest}
+      render={props => (
+        <React.Fragment>
+          <Component {...props} />
+        </React.Fragment>
+      )}
+    />
+  );
+
+  return token ? dashboard : <Redirect to="express" />;
+};
+
+const GERoute = ({ component: Component, ...rest }) => {
+  const token = localStorage.getItem("GE_JWT");
+
+  const dashboard = (
+    <Route
+      {...rest}
+      render={props => (
+        <React.Fragment>
+          <Component {...props} />
+        </React.Fragment>
+      )}
+    />
+  );
+
+  return token ? dashboard : <Redirect to="ge" />;
+};
+
 const AddPropsToRoute = (WrappedComponent, passedProps) => {
   return class Route extends React.Component {
     render() {
@@ -44,4 +95,11 @@ const AddPropsToRoute = (WrappedComponent, passedProps) => {
   };
 };
 
-export { DefaultRoute, DashboardRoute, AddPropsToRoute };
+export {
+  DefaultRoute,
+  DashboardRoute,
+  AddPropsToRoute,
+  CarnivalRoute,
+  ExpressRoute,
+  GERoute
+};

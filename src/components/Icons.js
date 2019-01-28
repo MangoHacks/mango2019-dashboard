@@ -249,8 +249,8 @@ export function LoginBlob(props) {
           y2="6.76700805%"
           id="linearGradient-1"
         >
-          <stop stop-color="#794CFF" offset="0%" />
-          <stop stop-color="#5D2FFF" offset="100%" />
+          <stop stopColor={props.topColor || "#794CFF"} offset="0%" />
+          <stop stopColor={props.bottomColor || "#5D2FFF"} offset="100%" />
         </linearGradient>
       </defs>
       <g
@@ -293,8 +293,8 @@ export function DashBlobTop(props) {
           y2="6.76700805%"
           id="linearGradient-1"
         >
-          <stop stop-color="#794CFF" offset="0%" />
-          <stop stop-color="#5D2FFF" offset="100%" />
+          <stop stopColor={props.topColor || "#794CFF"} offset="0%" />
+          <stop stopColor={props.bottomColor || "#5D2FFF"} offset="100%" />
         </linearGradient>
       </defs>
       <g
@@ -334,8 +334,8 @@ export function DashBlobCircle(props) {
           y2="6.76700805%"
           id="linearGradient-1"
         >
-          <stop stop-color="#794CFF" offset="0%" />
-          <stop stop-color="#5D2FFF" offset="100%" />
+          <stop stopColor={props.topColor || "#794CFF"} offset="0%" />
+          <stop stopColor={props.bottomColor || "#5D2FFF"} offset="100%" />
         </linearGradient>
       </defs>
       <g

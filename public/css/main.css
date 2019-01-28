@@ -195,7 +195,8 @@ html,
   font-weight: 900;
   color: #694eff;
   padding: 20px 15px;
-  border: 1px solid #f5f5f5;
+  /* border: 1px solid #f5f5f5; */
+  background-color: #f8f8f8;
   border-radius: 20px;
 }
 

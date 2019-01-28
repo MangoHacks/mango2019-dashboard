@@ -1,10 +1,10 @@
 import React from "react";
 import { BeatLoader } from "react-spinners";
 
-import { Facebook, Twitter, Instagram, Slack, LoginBlob } from "./Icons";
-import Mango from "./Mango";
+import { Facebook, Twitter, Instagram, Slack, LoginBlob } from "../../Icons";
+import Mango from "../../Mango";
 
-import token from "../services/token";
+import token from "../../../services/token";
 
 class Login extends React.Component {
   state = { loading: false };
@@ -21,9 +21,9 @@ class Login extends React.Component {
     try {
       this.setState({ loading: true });
       const jwt = await token.create(password);
-      localStorage.setItem("JWT", jwt);
+      localStorage.setItem("CARNIVAL_JWT", jwt);
 
-      this.props.history.push({ pathname: "/dashboard" });
+      this.props.history.push({ pathname: "/carnival-dashboard" });
     } catch (e) {
       this.setState({ loading: false, resume: "Upload resume" });
 
@@ -36,14 +36,21 @@ class Login extends React.Component {
     return (
       <div className="login">
         <Mango className="login-mango" color="white" />
-        <LoginBlob className="login-blob" />
+        <LoginBlob
+          className="login-blob"
+          topColor={"#FF4E49"}
+          bottomColor={"#FF5F43"}
+        />
         <div className="response">
           <div className="card">
             <h1>🥭 Oh it's sweet!</h1>
+            <p className="text-muted">
+              <b>Carnival + MangoHacks</b>
+            </p>
             <hr />
             {/* <h5>🥭 Login</h5> */}
 
-            {loading && <BeatLoader color="#694eff" />}
+            {loading && <BeatLoader color="#FF4E49" />}
 
             {loading || (
               <form onSubmit={this.submit}>
@@ -66,7 +73,9 @@ class Login extends React.Component {
                 </div>
 
                 <div className="form-group">
-                  <button type="submit">Submit!</button>
+                  <button type="submit" style={{ backgroundColor: "#FF4E49" }}>
+                    Login!
+                  </button>
                 </div>
               </form>
             )}
