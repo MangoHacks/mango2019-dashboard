@@ -50,7 +50,7 @@ class Login extends React.Component {
             <hr />
             {/* <h5>🥭 Login</h5> */}
 
-            {loading && <BeatLoader color="#834CFF" />}
+            {loading && <BeatLoader color="#4C88FF" />}
 
             {loading || (
               <form onSubmit={this.submit}>
@@ -73,7 +73,7 @@ class Login extends React.Component {
                 </div>
 
                 <div className="form-group">
-                  <button type="submit" style={{ backgroundColor: "#834CFF" }}>
+                  <button type="submit" style={{ backgroundColor: "#4C88FF" }}>
                     Login!
                   </button>
                 </div>
