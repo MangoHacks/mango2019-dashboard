@@ -96,6 +96,19 @@ class Dasboard extends React.Component {
               />
             </div>
           </div>
+          <div
+            style={{
+              justifyContent: "flex-end",
+              display: "flex",
+              alignItems: "baseline"
+            }}
+          >
+            <h1 style={{ fontSize: "25px" }}>{count}</h1>
+            &nbsp;
+            <p>
+              <b>Candidates</b>
+            </p>
+          </div>
 
           {search.length > 0 ? (
             <table className="hackers">
