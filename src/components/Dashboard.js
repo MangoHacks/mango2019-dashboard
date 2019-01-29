@@ -90,6 +90,20 @@ class Dasboard extends React.Component {
             </div>
           </div>
 
+          <div
+            style={{
+              justifyContent: "flex-end",
+              display: "flex",
+              alignItems: "baseline"
+            }}
+          >
+            <h1 style={{ fontSize: "25px" }}>{count}</h1>
+            &nbsp;
+            <p>
+              <b>Hackers</b>
+            </p>
+          </div>
+
           {search.length > 0 ? (
             <table className="hackers">
               <tbody>
@@ -106,7 +120,7 @@ class Dasboard extends React.Component {
               {this.fields(search)}
             </table>
           ) : hackers.length > 0 ? (
-            <table className="hackers">
+            <table className="hackers" style={{ width: "min-content" }}>
               <tbody>
                 <tr>
                   <th>First name</th>
