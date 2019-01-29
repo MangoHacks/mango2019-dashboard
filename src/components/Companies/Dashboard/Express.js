@@ -44,9 +44,7 @@ class Dasboard extends React.Component {
           <td className="text-muted">{hacker.firstName}</td>
           <td className="text-muted">{hacker.lastName}</td>
           <td className="text-muted">{hacker.email}</td>
-          <td className="text-muted">{hacker.school}</td>
           <td className="text-muted">{hacker.levelOfStudy}</td>
-          <td className="text-muted">{hacker.major}</td>
           <td className="text-muted">
             <a href={hacker.resume} target="_blank">
               Open
@@ -79,7 +77,7 @@ class Dasboard extends React.Component {
           bottomColor={"#4C88FF"}
         />
         <div className="card">
-          <h1>Carnival Cabinet 🗃</h1>
+          <h1>Express Scripts Cabinet 🗃</h1>
           <hr />
 
           <div className="search">
@@ -106,9 +104,7 @@ class Dasboard extends React.Component {
                   <th>First name</th>
                   <th>Last name</th>
                   <th>Email</th>
-                  <th>School</th>
                   <th>Level Of Study</th>
-                  <th>Major</th>
                   <th>Resume</th>
                 </tr>
               </tbody>
@@ -121,9 +117,7 @@ class Dasboard extends React.Component {
                   <th>First name</th>
                   <th>Last name</th>
                   <th>Email</th>
-                  <th>School</th>
                   <th>Level Of Study</th>
-                  <th>Major</th>
                   <th>Resume</th>
                 </tr>
               </tbody>

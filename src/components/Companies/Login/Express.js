@@ -23,7 +23,7 @@ class Login extends React.Component {
       const jwt = await token.create(password);
       localStorage.setItem("EXPRESS_JWT", jwt);
 
-      this.props.history.push({ pathname: "/carnival-dashboard" });
+      this.props.history.push({ pathname: "/express-dashboard" });
     } catch (e) {
       this.setState({ loading: false, resume: "Upload resume" });
 
