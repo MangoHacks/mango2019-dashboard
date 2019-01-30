@@ -11,7 +11,8 @@ const create = password =>
 
       resolve(data.data.token);
     } catch (e) {
-      reject(e.response.data.error);
+      console.log(e);
+      // reject(e.response.data.error);
     }
   });
 

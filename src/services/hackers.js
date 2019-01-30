@@ -23,7 +23,7 @@ const read = () =>
 
       resolve(data);
     } catch (e) {
-      reject(e.response.data.error);
+      // reject(e.response.data.error);
     }
   });
 
