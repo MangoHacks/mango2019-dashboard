@@ -112,7 +112,7 @@ class Dasboard extends React.Component {
               alignItems: "baseline"
             }}
           >
-            <button
+            {/* <button
               onClick={() => this.download("carnival")}
               className="btn batch-btn"
               style={{
@@ -120,7 +120,7 @@ class Dasboard extends React.Component {
               }}
             >
               Batch Download
-            </button>
+            </button> */}
             <div style={{ display: "flex", alignItems: "baseline" }}>
               <h1 style={{ fontSize: "25px" }}>{count}</h1>
               &nbsp;
