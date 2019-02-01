@@ -225,3 +225,314 @@ html,
     top: 50px;
   }
 }
+
+.checkin .heading {
+  position: relative;
+  text-align: center;
+  font-weight: 800;
+  margin: 30px;
+}
+
+@media only screen and (min-width: 550px) {
+  .checkin .main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 30px !important;
+  }
+}
+
+
+/* Registatrion */
+
+.reg-blob {
+  position: fixed;
+  right: 0;
+  z-index: -1;
+  top: 0;
+}
+
+.reg-blob-bottom {
+  position: fixed;
+  left: 0;
+
+  z-index: -1;
+  bottom: 0;
+}
+
+.register-mango {
+  position: fixed;
+  right: 0;
+  height: 100px;
+  z-index: -1;
+}
+
+.registration-card {
+  background-color: #fff;
+  border-radius: 20px;
+  margin: auto;
+  width: 700px;
+  box-shadow: -1px 3px 64px -17px rgba(0, 0, 0, 0.19);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 3rem 5rem;
+  line-height: 2.5;
+}
+
+.registration-card label {
+  font-weight: 600;
+}
+
+.registration-card h1 {
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+.registration-card input,
+.registration-card select {
+  background: #f6f8fa;
+  border: none;
+  border-radius: 50px;
+}
+.registration-card input:focus,
+.registration-card select:focus {
+  border: 1px solid #f6f8fa;
+  background: white;
+}
+
+.registration-card button {
+  border-radius: 50px;
+  border: none;
+  color: #fff;
+  background-color: #ff4e4e;
+  font-weight: 800;
+  font-size: 20px;
+  padding: 2px 0px;
+  width: 100%;
+}
+
+.registration-card button:hover {
+  cursor: pointer;
+}
+
+.registration-card .mlh-cc {
+  line-height: 1;
+}
+
+.registration-card .loading {
+  text-align: center;
+}
+
+.mlh-link {
+  text-decoration: none;
+  color: black;
+}
+
+.mlh-link:hover {
+  cursor: pointer;
+  color: #ff4e4a;
+  text-decoration: none;
+}
+
+/* ---------------------------- */
+
+/* Response */
+
+.res-blob-top {
+  position: fixed;
+  left: 0;
+  top: 0;
+  /* z-index: -1; */
+}
+
+.res-blob-bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+.response-mango {
+  position: fixed;
+  bottom: 50px;
+  right: -60px;
+  z-index: 1;
+  height: 100px;
+}
+
+.response {
+  height: 100%;
+  background-color: #f6f8fa;
+}
+
+.response .card {
+  background-color: #fff;
+  width: 600px;
+  border-radius: 20px;
+  border: none;
+  padding: 50px;
+  text-align: center;
+  top: 150px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+}
+
+/* background-color: #fff;
+border-radius: 20px;
+margin: auto;
+width: 700px;
+box-shadow: -1px 3px 64px -17px rgba(0, 0, 0, 0.19);
+margin-top: 50px;
+margin-bottom: 50px;
+padding: 3rem 5rem;
+line-height: 2.5; */
+
+.response .card a {
+  color: #000;
+}
+
+.response .card a:hover {
+  color: rgb(255, 81, 81);
+  text-decoration: none;
+}
+
+.response .card h1 {
+  font-weight: 900;
+  font-size: 50px;
+}
+
+.response .card hr {
+  width: 50px;
+  border: 1px solid black;
+  margin: 15px auto;
+}
+
+.response .card h5 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.response .social-media {
+  margin-top: 15px;
+}
+
+.response .social-media a {
+  padding: 0 5px;
+}
+/* ---------------------------- */
+
+
+@media only screen and (max-width: 750px) {
+  .registration-card {
+    width: 550px !important;
+    padding: 4rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .register-mango {
+    display: none;
+  }
+  .iframe-video {
+    height: 400px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .response .card {
+    width: 450px;
+    padding: 50px;
+  }
+
+  .reg-blob-bottom {
+    position: fixed;
+    left: 0;
+    z-index: -1;
+    bottom: 0;
+    height: 170px;
+  }
+
+  .reg-blob {
+    position: fixed;
+    right: auto;
+    z-index: -1;
+    top: 0;
+    height: 320px;
+  }
+
+  .res-blob-top {
+    position: fixed;
+    right: auto;
+    /* z-index: -1; */
+    top: 0;
+    height: 320px;
+  }
+  .res-blob-bottom {
+    position: fixed;
+    left: 0;
+
+    bottom: 0;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .registration-card {
+    width: 490px !important;
+    padding: 4rem;
+    padding: 2rem 1.8rem;
+  }
+
+  .intro {
+    font-size: 1.3em;
+  }
+
+  .answer p,
+  .answer a {
+    font-size: 16px;
+  }
+
+  .info {
+    font-size: 1.3em !important;
+  }
+  .iframe-video {
+    height: 300px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .response-mango {
+    display: none;
+  }
+
+  .registration-card {
+    width: 95% !important;
+  }
+  .response .card h1 {
+    font-size: 20px;
+  }
+  .response .card {
+    top: 10px;
+    bottom: 10px;
+    width: 95% !important;
+    padding: 50px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .registration-card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .response .card {
+    width: 290px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .response .card {
+    padding: 30px;
+  }
+}

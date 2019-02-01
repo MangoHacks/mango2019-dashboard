@@ -81,7 +81,7 @@ export function RegBlobTop(props) {
       <g
         id="Page-1"
         stroke="none"
-        stroke-width="1"
+        strokeWidth="1"
         fill="none"
         fillRule="evenodd"
       >
@@ -125,9 +125,9 @@ export function RegBlobBottom(props) {
       <g
         id="Page-1"
         stroke="none"
-        stroke-width="1"
+        strokeWidth="1"
         fill="none"
-        fill-rule="evenodd"
+        fillRule="evenodd"
       >
         <g
           id="Desktop-HD"
@@ -170,9 +170,9 @@ export function ResBlobBottom(props) {
       <g
         id="Page-1"
         stroke="none"
-        stroke-width="1"
+        strokeWidth="1"
         fill="none"
-        fill-rule="evenodd"
+        fillRule="evenodd"
       >
         <g
           id="Desktop-HD"
@@ -215,9 +215,9 @@ export function ResBlobTop(props) {
       <g
         id="Page-1"
         stroke="none"
-        stroke-width="1"
+        strokeWidth="1"
         fill="none"
-        fill-rule="evenodd"
+        fillRule="evenodd"
       >
         <g id="Desktop-HD" fill="url(#linearGradient-1)">
           <path
@@ -256,9 +256,9 @@ export function LoginBlob(props) {
       <g
         id="Page-1"
         stroke="none"
-        stroke-width="1"
+        strokeWidth="1"
         fill="none"
-        fill-rule="evenodd"
+        fillRule="evenodd"
       >
         <g
           id="Desktop-HD"
@@ -300,9 +300,9 @@ export function DashBlobTop(props) {
       <g
         id="Page-1"
         stroke="none"
-        stroke-width="1"
+        strokeWidth="1"
         fill="none"
-        fill-rule="evenodd"
+        fillRule="evenodd"
       >
         <g id="Desktop-HD" fill="url(#linearGradient-1)">
           <path
@@ -341,9 +341,9 @@ export function DashBlobCircle(props) {
       <g
         id="Page-1"
         stroke="none"
-        stroke-width="1"
+        strokeWidth="1"
         fill="none"
-        fill-rule="evenodd"
+        fillRule="evenodd"
       >
         <g
           id="Desktop-HD"

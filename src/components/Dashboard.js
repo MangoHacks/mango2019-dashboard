@@ -36,6 +36,11 @@ class Dasboard extends React.Component {
     this.setState({ search: matches });
   };
 
+  onLogout = () => {
+    localStorage.removeItem("JWT");
+    this.props.history.push("/");
+  };
+
   fields = hackers =>
     hackers.map(hacker => (
       <tbody key={hacker.email}>
@@ -70,6 +75,11 @@ class Dasboard extends React.Component {
         <DashBlobTop className="dash-blob-top" />
         <DashBlobCircle className="dash-blob-circle" />
         <div className="card">
+          <div>
+            <button onClick={this.onLogout} className="btn">
+              Logout
+            </button>
+          </div>
           <h1>Mango Cabinet 🗃</h1>
           <hr />
 

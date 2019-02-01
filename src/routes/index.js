@@ -15,7 +15,7 @@ const DefaultRoute = ({ component: Component, ...rest }) => {
     />
   );
 
-  return token ? <Redirect to="dashboard" /> : requestedRoute;
+  return token ? <Redirect to="checkin" /> : requestedRoute;
 };
 
 const DashboardRoute = ({ component: Component, ...rest }) => {

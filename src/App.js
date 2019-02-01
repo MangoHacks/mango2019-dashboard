@@ -26,6 +26,9 @@ import ExpressDashboard from "./components/Companies/Dashboard/Express";
 import GEDashboard from "./components/Companies/Dashboard/GE";
 
 import HTTP404 from "./components/HTTP404";
+import Checkin from "./components/Checkin";
+import Hacker from "./components/Hacker";
+import HackerResponse from "./components/HackerResponse";
 
 class App extends React.Component {
   render() {
@@ -41,9 +44,12 @@ class App extends React.Component {
 
           <DashboardRoute
             exact
-            path="/dashboard"
-            component={AddPropsToRoute(Dashboard)}
+            path="/checkin"
+            component={AddPropsToRoute(Checkin)}
           />
+
+          <Route exact path="/hacker" component={Hacker} />
+          <Route exact path="/hackerresponse" component={HackerResponse} />
 
           {/* Companies Login*/}
           <DefaultRoute exact path="/carnival" component={CarnivalLogin} />
