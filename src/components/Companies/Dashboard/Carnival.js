@@ -54,6 +54,15 @@ class Dasboard extends React.Component {
       </tbody>
     ));
 
+  download = async company => {
+    try {
+      const { hackers } = this.state;
+      await candidates.download(hackers);
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
   render() {
     const {
       hackers,
@@ -96,18 +105,30 @@ class Dasboard extends React.Component {
               />
             </div>
           </div>
+
           <div
             style={{
-              justifyContent: "flex-end",
+              justifyContent: "space-between",
               display: "flex",
               alignItems: "baseline"
             }}
           >
-            <h1 style={{ fontSize: "25px" }}>{count}</h1>
-            &nbsp;
-            <p>
-              <b>Candidates</b>
-            </p>
+            {/* <button
+              onClick={() => this.download("carnival")}
+              className="btn batch-btn"
+              style={{
+                background: "linear-gradient(90deg, #ff4e49, #ff5f43)"
+              }}
+            >
+              Batch Download
+            </button> */}
+            <div style={{ display: "flex", alignItems: "baseline" }}>
+              <h1 style={{ fontSize: "25px" }}>{count}</h1>
+              &nbsp;
+              <p>
+                <b>Candidates</b>
+              </p>
+            </div>
           </div>
 
           {search.length > 0 ? (
