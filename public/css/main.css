@@ -239,7 +239,8 @@ html,
   position: relative;
   text-align: center;
   font-weight: 800;
-  margin: 30px;
+  font-size: 1.8rem;
+  margin: 12px;
 }
 
 @media only screen and (min-width: 550px) {
@@ -247,6 +248,12 @@ html,
     max-width: 640px;
     margin: 0 auto;
     padding: 30px !important;
+  }
+  .checkin .heading {
+    position: relative;
+    text-align: center;
+    font-weight: 800;
+    margin: 30px;
   }
 }
 
